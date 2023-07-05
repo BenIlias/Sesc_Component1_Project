@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Courses</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <style>
+        * {
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        #myInput {
+            background-image: url('searchicon.png');
+            background-position: 10px 10px;
+            background-repeat: no-repeat;
+            width: 100%;
+            font-size: 16px;
+            padding: 12px 20px 12px 40px;
+            border: 1px solid #ddd;
+            margin-bottom: 12px;
+        }
+
+        .topnav {
+            background-color: #333;
+            overflow: hidden;
+        }
+
+        /* Style the links inside the navigation bar */
+        .topnav a {
+            float: left;
+            color: #f2f2f2;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 17px;
+        }
+
+        /* Change the color of links on hover */
+        .topnav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+
+        /* Add a color to the active/current link */
+        .topnav a.active {
+            background-color: #04AA6D;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <img src='Student-Portal-logo-v.png' height="50">
+    <div class="topnav">
+        <a class="active" href="home">Home</a>
+        <a href="courses">All Courses</a>
+        <a href="#contact">Sign Out</a>
+    </div>
+
+    <div class="container mt-3">
+        <h2>Courses available</h2>
+        <div class="searching">
+            <input type="text" id="myInput" placeholder="Search for course.." title="Type in a name">
+        </div>
+        <table class="table">
+            <thead class="table-success">
+                <tr>
+                    <th>Title</th>
+                    <th>Discription</th>
+                    <th>Fee</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Intoduction into Programming</td>
+                    <td>An introductory course covering the fundementals of OOP</td>
+                    <td>150.00 &pound</td>
+                    <td><a><i class="fa-solid fa-arrows-to-dot fa-xl"></i></a></td>
+                    
+                </tr>
+                <tr>
+                    <td>OCPJP Exam Preparation</td>
+                    <td>A course covering the learning objectives for the latest OCPJP certification</td>
+                    <td>350.00 &pound</td>
+                    <td><a><i class="fa-solid fa-arrows-to-dot fa-xl"></i></a></td>
+                    
+
+                </tr>
+                <tr>
+                    <td>Spring Boot</td>
+                    <td>An intermediate course on how to make the most of Spring Boot's latest functionality</td>
+                    <td>200.00 &pound</td>
+                    <td><a><i class="fa-solid fa-arrows-to-dot fa-xl"></i></a></td>
+                    
+
+                </tr>
+                <tr>
+                    <td>Smart Systems</td>
+                    <td>Gain an in-depth of the 'internet of things' paradigm and how smart devices can be designed for
+                        a connected world</td>
+                    <td>650.00 &pound</td>
+                    <td><a><i class="fa-solid fa-arrows-to-dot fa-xl"></i></a></td>
+
+                </tr>
+                <tr>
+                    <td>Research Practice</td>
+                    <td>Develop an awareness of the methods and skills required to carry out Master level research
+                        successfully</td>
+                    <td>550.00 &pound</td>
+                    <td><a><i class="fa-solid fa-arrows-to-dot fa-xl"></i></a></td>
+
+                </tr>
+                <tr>
+                    <td>Project management</td>
+                    <td>Develope your knowledge so you can initiate, plan, execute, manage and sign off a project</td>
+                    <td>800.00 &pound</td>
+                    <td><a><i class="fa-solid fa-arrows-to-dot fa-xl"></i></a></td>
+
+                </tr>
+                <tr>
+                    <td>Intelligent Systems and Robotics</td>
+                    <td>Learn about the fundementals principles for intelligent systems, autonomous behaviour, sensing
+                        and control</td>
+                    <td>725.00 &pound</td>
+                    <td><a><i class="fa-solid fa-arrows-to-dot fa-xl"></i></a></td>
+
+                </tr>
+                <tr>
+                    <td>Dissertation</td>
+                    <td>This module provide the opportunity to engage in research or advanced scholarchip in a subject
+                        area</td>
+                    <td>600.00 &pound</td>
+                    <td><a><i class="fa-solid fa-arrows-to-dot fa-xl"></i></a></td>
+
+                </tr>
+                <tr>
+                    <td>Cloud Computing Development</td>
+                    <td>Examine how to build cloud service and the technologies required to provide these to client-side
+                        systems</td>
+                    <td>670.00 &pound</td>
+                    <td><a><i class="fa-solid fa-arrows-to-dot fa-xl"></i></a></td>
+
+                </tr>
+                <tr>
+                    <td>Web Application</td>
+                    <td>Learning all technologies that are related to web such as networking and programming web pages</td>
+                    <td>1100.00 &pound</td>
+                    <td><a><i class="fa-solid fa-arrows-to-dot fa-xl"></i></a></td>
+
+                </tr>
+                <tr>
+                    <td>Cyber Security</td>
+                    <td>Understanding all the concepts of the security and learning OS Systems like Linux</td>
+                    <td>2000.00 &pound</td>
+                    <td><a><i class="fa-solid fa-arrows-to-dot fa-xl"></i></a></td>
+
+                </tr>
+                <tr>
+                    <td>Design</td>
+                    <td>Taking the real techniques and methods to became a qualified designer</td>
+                    <td>2500.00 &pound</td>
+                    <td><a><i class="fa-solid fa-arrows-to-dot fa-xl"></i></a></td>
+
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <!-- Simple form to send post request-->
+
+    <form action="/enrollement" method="POST" style="display:none;">
+        <input class="titleForm" type="text" name="titleForm">
+        <input class="courseDetails" type="text" name="courseDetails">
+        <input class="courseFees" type="text" name="courseFees">
+        
+        <button class="submitBtn">Submit</button>
+    </form>
+    
+    
+    
+    <script src="index.js"></script>
+
+</body>
+
+</html>

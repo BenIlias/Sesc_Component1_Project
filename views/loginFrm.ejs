@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="styles/style.css">
+  <style>
+    .checkVar {
+      color: red;
+    }
+  </style>
+</head>
+
+
+
+<body>
+  <div class="container">
+    <div class="login form">
+      <header>Login</header>
+      <% if (checkVar) { %>
+        <h5 class="checkVar"><%= checkVar %></h5>
+        <% } %>
+      <form action="checkerLogin" method="post">
+        <input type="text" name="emailOrUser"placeholder="Enter your email or userName">
+        <input type="password" name="passWord"placeholder="Enter your password">
+        <input type="submit" class="button" value="Login">
+      </form>
+      <div class="signup">
+        <span class="signup">Don't have an account?
+          <a href="registerFrm"><label>Signup</label></a>
+        </span>
+      </div>
+      
+    </div>
+  </div>
+
+  <script>
+    localStorage.clear();
+  </script>
+  
+</body>
+
+</html>
